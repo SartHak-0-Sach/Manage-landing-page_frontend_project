@@ -1,101 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Manage landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+<body class="page">
+  <header class="page__header">
+    <nav class="wrapper -header">
+      <input type="checkbox" id="a-menuCheckbox" class="a-menuCheckbox">
+      <label for="a-menuCheckbox" class="m-menuToggle" aria-label="Open main menu">
+        <img src="img/icon-hamburger.svg" alt="menu icon" class="a-menu a-openMenu">
+        <img src="img/icon-close.svg" alt="menu icon" class="a-menu a-closeMenu">
+      </label>
+      <svg class="img _logo -nav" role="img" viewBox="0 0 146 24">
+        <use xlink:href="#a-text" class="a-text" />
+        <use xlink:href="#a-object" class="a-object" />
+      </svg>
+      <ul class="list -nav">
+        <li class="list _item _nav"><a href="#" class="list _link _nav">Pricing</a></li>
+        <li class="list _item _nav"><a href="#" class="list _link _nav">Product</a></li>
+        <li class="list _item _nav"><a href="#" class="list _link _nav">About Us</a></li>
+        <li class="list _item _nav"><a href="#" class="list _link _nav">Careers</a></li>
+        <li class="list _item _nav"><a href="#" class="list _link _nav"> Community</a></li>
+      </ul>
+      <a href="#" class="button _nav _link -red">Get Started</a>
+    </nav>
+  </header>
 
-  Get Started
+  <main class="page__content">
+    <article class="hero">
+      <div class="wrapper -hero">
+        <div class="group _hero -text">
+          <h1 class="title _hero">
+            Bring everyone together to build better products.
+          </h1>
+          
+          <p class="copy _hero">
+            "Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.’’
+          </p>
+        </div>
+        <img src="/img/illustration-intro.svg" alt="Chart illustration" class="img _hero">
+        <!-- <a href="#" class="button _link _hero -red">Get Started</a> -->
+      </div>
+    </article>
 
-  Bring everyone together to build better products.
+    <article class="difference">
+      <div class="wrapper -difference">
+        <div class="group _diference">
+          <h2 class="title _difference">
+            What’s different about Manage?
+          </h2>
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+          <p class="copy _difference">
+            Manage provides all the functionality your team needs, without
+            the complexity. Our software is tailor-made for modern digital
+            product teams.
+          </p>
+        </div>
 
-  Get Started
+        <div class="group _difference -text">
+          <span class="number -red">01</span>
+          <h3 class="title _difference -sub">
+            Track company-wide progress
+          </h3>
+          <p class="copy _difference -sub">
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
 
-  What’s different about Manage?
+          <span class="number -red">02</span>
+          <h3 class="title _difference -sub">
+            Advanced built-in reports
+          </h3>
+          <p class="copy _difference -sub">
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
+          <span class="number -red">03</span>
+          <h3 class="title _difference -sub">
+            Everything you need in one place
+          </h3>
+          <p class="copy _difference -sub">
+            Stop jumping from one service to another to communicate, store files,
+            track tasks and share documents. Manage offers an all-in-one team
+            productivity solution.
+          </p>
+        </div>
+      </div>
+    </article>
 
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
+    <article class="testimonials">
+      <div class="wrapper -testimonials">
+        <h2 class="title _testimonials">
+          What they’ve said
+        </h2>
 
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
+        <div class="group _testimonials -text ">
+          <div class="card _testimonials">
+            <img src="img/avatar-anisha.png" alt="portrait Anisha" class="img _testimonials">
+            <h3 class="title _testimonials -card">
+              Anisha Li
+            </h3>
+            <p class="copy _testimonials -card">
+              “Manage has supercharged our team’s workflow. The ability to maintain
+              visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+          </div>
+          <div class="card _testimonials">
+            <img src="/img/avatar-ali.png" alt="portrait Ali" class="img _testimonials">
+            <h3 class="title _testimonials -card">
+              Ali Bravo
+            </h3>
+            <p class="copy _testimonials -card">
+              “We have been able to cancel so many other subscriptions since using
+              Manage. There is no more cross-channel confusion and everyone is much
+              more focused.”
+            </p>
+          </div>
+          <div class="card _testimonials">
+            <img src="img/avatar-richard.png" alt="portrait Richard" class="img _testimonials">
+            <h3 class="title _testimonials -card">
+              Richard Watts
+            </h3>
+            <p class="copy _testimonials -card">
+              “Manage allows us to provide structure and process. It keeps us organized
+              and focused. I can’t stop recommending them to everyone I talk to!”
+            </p>
+          </div>
+          <div class="card _testimonials">
+            <img src="img/avatar-shanai.png" alt="portrait Shanai" class="img _testimonials">
+            <h3 class="title _testimonials -card">
+              Shanai Gough
+            </h3>
+            <p class="copy _testimonials -card">
+              “Their software allows us to track, manage and collaborate on our projects
+              from anywhere. It keeps the whole team in-sync without being intrusive.”
+            </p>
+          </div>
+        </div>
+        <a href="#" class="button _link _testimonials -red">Get Started</a>
+      </div>
+    </article>
 
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
+    <article class="cta">
+      <div class="wrapper -cta">
+        <h2 class="title _cta">
+          Simplify how your team works today.
+        </h2>
+        <a href="#" class="button _link _cta -grey">Get Started</a>
+      </div>
+    </article>
+  </main>
+  <footer class="page _footer">
+    <div class="wrapper -footer">
+      <div class="group _footer -logo">
+        <svg class="img _logo -footer" role="img" viewBox="0 0 146 24">
+          <use xlink:href="#a-text" class="a-text" />
+          <use xlink:href="#a-object" class="a-object" />
+        </svg>
+        <ul class="list _footer -social">
+          <li class="list _item -social"><a href="#" class="list _link -social"><img src="img/icon-facebook.svg"
+                alt="facebook" class="img _footer"></a></li>
+          <li class="list _item -social"><a href="#" class="list _link -social"><img src="img/icon-youtube.svg"
+                alt="youtube" class="img _footer"></a></li>
+          <li class="list _item -social"><a href="#" class="list _link -social"><img src="img/icon-twitter.svg"
+                alt="twitter" class="img _footer"></a></li>
+          <li class="list _item -social"><a href="#" class="list _link -social"><img src="img/icon-pinterest.svg"
+                alt="pinterest" class="img _footer"></a></li>
+          <li class="list _item -social"><a href="#" class="list _link -social"><img src="img/icon-instagram.svg"
+                alt="instagram" class="img _footer"></a></li>
+        </ul>
+      </div>
 
-  What they’ve said
+      <ul class="list _footer -us">
+        <li class="list _item -us"><a href="#" class="list _link -us">Home</a></li>
+        <li class="list _item -us"><a href="#" class="list _link -us">Pricing</a></li>
+        <li class="list _item -us"><a href="#" class="list _link -us">Products</a></li>
+        <li class="list _item -us"><a href="#" class="list _link -us">About Us</a></li>
+      </ul>
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
+      <ul class="list _footer -you">
+        <li class="list _item -you"><a href="#" class="list _link -you">Careers</a></li>
+        <li class="list _item -you"><a href="#" class="list _link -you">Community</a></li>
+        <li class="list _item -you"><a href="#" class="list _link -you">Privacy Policy</a></li>
+      </ul>
 
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
+      <form action="#" class="form _footer">
+        <div class="group _footer -form">
+          <input type="email" class="form _input" placeholder="Updates in your inbox…"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required="" aria-label="email address">
+          <span class="form -errorMessage">Please insert a valid email</span>
+        </div>
+        <button type="submit" class="button _link -form -red" onclick="formCheck()" aria-label="submit">Go</button>
+      </form>
 
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
 
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
 
-  Get Started
+      <p class="copy _footer -copyright">
+        Copyright 2020. All Rights Reserved
+      </p>
 
-  Simplify how your team works today.
-  Get Started
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="_link" rel="noopener">Frontend
+          Mentor</a>.
+        Coded by <a href="https://github.com/SartHak-0-Sach" class="_link">Sarthak Sachdev</a>.
+      </div>
+    </div>
+  </footer>
+  <svg class="m-logo" style="display: none">
+    <symbol>
+      <symbol id="a-text">
+        <path
+          d="m40.014,16.809l0,-8.256c0,-1.577 0.366,-2.82 1.098,-3.73c0.733,-0.91 1.65,-1.365 2.75,-1.365c2.158,0 3.237,1.577 3.237,4.731l0,8.62l3.782,0l0,-9.58c0,-2.415 -0.5,-4.22 -1.503,-5.417c-1.002,-1.197 -2.433,-1.795 -4.294,-1.795c-1.222,0 -2.34,0.234 -3.352,0.703a6.833,6.833 0 0 0 -2.56,2.043l-0.066,0c-0.98,-1.831 -2.62,-2.746 -4.922,-2.746c-0.969,0 -1.902,0.217 -2.799,0.653a6.976,6.976 0 0 0 -2.353,1.878l-0.05,0l0,-2.283l-3.782,0l0,16.527l3.782,0l0,-8.239c0,-1.577 0.372,-2.82 1.115,-3.73c0.743,-0.91 1.693,-1.365 2.849,-1.365c2.19,0 3.286,1.577 3.286,4.731l0,8.62l3.782,0zm21.101,0.248c2.246,0 3.997,-0.827 5.252,-2.482l0.05,0l0,2.217l3.616,0l0,-16.527l-3.782,0l0,1.985l-0.066,0c-1.255,-1.489 -2.955,-2.233 -5.103,-2.233a7.76,7.76 0 0 0 -5.681,2.415c-0.705,0.75 -1.26,1.66 -1.668,2.73a9.589,9.589 0 0 0 -0.611,3.44c0,1.258 0.203,2.416 0.61,3.475c0.408,1.059 0.964,1.952 1.669,2.68a7.348,7.348 0 0 0 2.535,1.696a8.325,8.325 0 0 0 3.18,0.604l-0.001,0zm0.595,-3.441c-1.399,0 -2.538,-0.466 -3.419,-1.398c-0.88,-0.932 -1.321,-2.132 -1.321,-3.599c0,-1.555 0.454,-2.804 1.362,-3.747c0.909,-0.943 2.04,-1.414 3.394,-1.414c1.343,0 2.458,0.493 3.345,1.48c0.886,0.988 1.33,2.215 1.33,3.681c0,1.467 -0.455,2.667 -1.363,3.599c-0.909,0.932 -2.018,1.398 -3.328,1.398zm27.112,3.193l0,-9.745c0,-2.393 -0.536,-4.166 -1.61,-5.319c-1.072,-1.152 -2.557,-1.728 -4.45,-1.728a7.373,7.373 0 0 0 -3.056,0.645a6.958,6.958 0 0 0 -2.477,1.87l-0.05,0l0,-2.268l-3.782,0l0,16.527l3.782,0l0,-8.304c0,-1.588 0.388,-2.823 1.164,-3.706c0.777,-0.882 1.814,-1.323 3.113,-1.323c0.595,0 1.104,0.077 1.528,0.231c0.424,0.155 0.796,0.406 1.115,0.753c0.32,0.348 0.556,0.819 0.71,1.415c0.154,0.595 0.231,1.323 0.231,2.183l0,8.769l3.782,0zm10.218,0.248c2.246,0 3.996,-0.827 5.252,-2.482l0.05,0l0,2.217l3.616,0l0,-16.527l-3.782,0l0,1.985l-0.066,0c-1.255,-1.489 -2.956,-2.233 -5.103,-2.233a7.76,7.76 0 0 0 -5.682,2.415c-0.704,0.75 -1.26,1.66 -1.668,2.73a9.589,9.589 0 0 0 -0.61,3.44c0,1.258 0.203,2.416 0.61,3.475c0.408,1.059 0.964,1.952 1.668,2.68a7.348,7.348 0 0 0 2.536,1.696a8.325,8.325 0 0 0 3.179,0.604zm0.594,-3.441c-1.398,0 -2.538,-0.466 -3.418,-1.398c-0.881,-0.932 -1.322,-2.132 -1.322,-3.599c0,-1.555 0.455,-2.804 1.363,-3.747c0.908,-0.943 2.04,-1.414 3.394,-1.414c1.343,0 2.458,0.493 3.344,1.48c0.886,0.988 1.33,2.215 1.33,3.681c0,1.467 -0.455,2.667 -1.363,3.599c-0.908,0.932 -2.018,1.398 -3.328,1.398zm19.07,10.125c1.2,0 2.274,-0.14 3.22,-0.422c0.947,-0.281 1.743,-0.673 2.387,-1.175a6.385,6.385 0 0 0 1.602,-1.844a8.14,8.14 0 0 0 0.916,-2.383c0.188,-0.86 0.281,-1.803 0.281,-2.829l0,-14.823l-3.782,0l0,1.737l-0.066,0a7.059,7.059 0 0 0 -2.353,-1.49a7.62,7.62 0 0 0 -2.767,-0.512c-1.508,0 -2.862,0.358 -4.062,1.075c-1.2,0.717 -2.134,1.713 -2.8,2.987c-0.666,1.273 -0.999,2.705 -0.999,4.293c0,1.61 0.35,3.038 1.049,4.285c0.699,1.246 1.66,2.203 2.882,2.87c1.222,0.667 2.598,1.001 4.129,1.001c2.047,0 3.716,-0.673 5.004,-2.018l0.066,0l0,1.753c0,1.17 -0.43,2.14 -1.288,2.912c-0.86,0.772 -2.07,1.158 -3.634,1.158c-1.068,0 -2.006,-0.132 -2.816,-0.397c-0.809,-0.265 -1.742,-0.678 -2.799,-1.24l-0.892,3.341c0.925,0.552 1.966,0.976 3.122,1.274c1.156,0.298 2.356,0.447 3.6,0.447zm0.132,-10.72c-1.365,0 -2.491,-0.434 -3.377,-1.3c-0.887,-0.865 -1.33,-2.026 -1.33,-3.482c0,-1.4 0.435,-2.542 1.305,-3.425c0.87,-0.882 2.004,-1.323 3.402,-1.323c1.332,0 2.442,0.435 3.328,1.307c0.886,0.871 1.33,2.002 1.33,3.391c0,1.401 -0.433,2.556 -1.297,3.466c-0.864,0.91 -1.985,1.365 -3.361,1.365l0,0.001zm19.086,4.036c1.542,0 2.899,-0.281 4.071,-0.844c1.173,-0.562 2.133,-1.323 2.882,-2.283l-2.642,-2.266c-1.035,1.301 -2.406,1.952 -4.113,1.952c-1.21,0 -2.237,-0.337 -3.08,-1.01c-0.842,-0.672 -1.384,-1.593 -1.627,-2.762l12.024,0c0.066,-0.397 0.099,-0.9 0.099,-1.506c0,-1.599 -0.325,-3.027 -0.975,-4.285a7.198,7.198 0 0 0 -2.807,-2.961c-1.222,-0.717 -2.632,-1.075 -4.228,-1.075a8.191,8.191 0 0 0 -3.188,0.62c-0.99,0.414 -1.844,0.99 -2.56,1.729c-0.715,0.739 -1.277,1.638 -1.684,2.696c-0.407,1.06 -0.611,2.212 -0.611,3.458c0,1.688 0.369,3.185 1.106,4.492c0.738,1.307 1.746,2.308 3.023,3.003c1.277,0.695 2.714,1.042 4.31,1.042zm3.815,-10.274l-8.257,0c0.264,-1.059 0.776,-1.878 1.535,-2.457c0.76,-0.579 1.663,-0.868 2.709,-0.868c1.057,0 1.93,0.298 2.618,0.893c0.688,0.596 1.153,1.406 1.395,2.432z" />
+        <symbol id="a-object">
+          <path
+            d="m2.786,10.286c1.538,0 2.785,1.279 2.785,2.857c0,1.577 -1.247,2.857 -2.785,2.857c-1.539,0 -2.786,-1.28 -2.786,-2.857c0,-1.578 1.247,-2.857 2.786,-2.857zm0,-10.286c1.538,0 2.784,1.28 2.784,2.857c0,1.578 -1.247,2.857 -2.785,2.857c-1.538,0 -2.785,-1.279 -2.785,-2.857c0,-1.577 1.247,-2.857 2.786,-2.857zm10.028,0c1.539,0 2.786,1.28 2.786,2.857c0,1.578 -1.247,2.857 -2.786,2.857c-1.538,0 -2.785,-1.279 -2.785,-2.857c0,-1.577 1.247,-2.857 2.785,-2.857z" />
+          <ellipse ry="2.857" rx="2.786" opacity="0.5" cy="13.257" cx="12.814" />
+        </symbol>
+      </symbol>
+    </symbol>
+  </svg>
+  <script src="script.js"></script>
 </body>
+
 </html>
